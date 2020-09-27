@@ -16,10 +16,10 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooksearch");
+//mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googleSearch");
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/googlesearch',
+    process.env.MONGODB_URI || 'mongodb://localhost/google--book-search',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
